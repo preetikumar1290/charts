@@ -116,8 +116,8 @@ podPortName: grafana
 ## ref: http://kubernetes.io/docs/user-guide/services/
 ##
 service:
-  type: ClusterIP
-  port: 80
+  type: Loadbalancer
+  port: 8080
   targetPort: 3000
     # targetPort: 4181 To be used with a proxy extraContainer
   annotations: {}
